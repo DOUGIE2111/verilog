@@ -134,12 +134,12 @@ always@(posedge clk3 or negedge nrst)
 					t1<=0;
 					t2<=t2+1;
 		  end
-		  else if (t2==9 & scan==9 & q==9  & t1==9)
+		   if (t2==9 & scan==9 & q==9  & t1==9)
 		  begin
 					t2<=0;
 					t3<=t3+1;
 		   end
-		   else if(t3==9 & scan==9 & q==9 & t1==9 & t2==9)
+		   if(t3==9 & scan==9 & q==9 & t1==9 & t2==9)
 		   begin
 		   q<=0;
 		   scan<=0;
